@@ -1,0 +1,6 @@
+@model LoginForm
+<h1>Log in</h1><form asp-action="Login" method="post">
+<div asp-validation-summary="All" class="error"></div>
+<label asp-for="Username"></label><input asp-for="Username" autocomplete="username" /><span asp-validation-for="Username"></span>
+<label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password" /><span asp-validation-for="Password"></span>
+<button type="submit">Log in</button></form>
